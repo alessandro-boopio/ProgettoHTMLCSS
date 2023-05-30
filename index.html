@@ -1,0 +1,448 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accademia del Secolo | Corsi gratuiti in Italia</title>
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Accademia del Secolo | Corsi di formazione'/>
+    <meta property='og:description' content='Corsi di formazione gratuiti in Italia | Accademia del Secolo'/>
+    <meta property='og:url' content='' />
+    <meta property='og:site_name' content='Accademia del Secolo' />
+    <meta property='og:image' content='logo favicon/Logo11.png' />
+    <meta property='og:image:secure_url' content='logo favicon' />
+    <meta property='og:image:width' content='818' />
+    <meta property='og:image:height' content='261' />      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" href="Favicon/Favicon.png" alt="Accademia del Secolo | Corsi gratuiti in Italia" type="image/favicon" width="16px">
+<style>
+/*Base Styli*/
+.body{font-family: 'Poppins', sans-serif; color: grey;}
+h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
+.testo1{font-size: 20px;}
+.testo{line-height: 15px; color: whitesmoke; font-weight: 300;}
+.testo4{text-transform: uppercase;font-size: 20px; font-weight: bold; color: white;}
+.testo3{color: white; font-size: 70px; font-weight: 900;}
+.big-text{font-size: 70px; font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.intro-text{text-transform: uppercase;font-size: 20px; font-weight: bold;}
+.small-text{font-size: 14px;}
+.button{padding: 10px 30px; background-color: blue; color: #fff; display: inline-block; border-radius: 4px; font-family: 'Roboto', sans-serif; text-decoration: none;}
+.tv1{color: red; font-size: 35px;}
+.c{font-size: 25px;}
+.testo2{margin-top:120px;}
+.tv{color: antiquewhite; font-size: 25px;}
+/*Base Styli*/
+
+
+
+  
+
+
+ /*smartphone*/
+@media(max-width: 768px){
+.big-text{font-size: 40px;}
+}
+
+
+
+ /*Header*/
+.header{
+    width: 95%; position: fixed; top: 0;
+    left: 50%;
+transform: translateX(-48%);
+    padding: 30px;
+    display: flex;
+    max-width: 1350px;
+}
+.logo{z-index: 1; }
+.logo img{width: 100px; height: 90px; margin-top: -15px;}
+.menu{ width: 100%; z-index: 0;}
+.menu li{display: inline-block}
+.menu li a{color: wheat; padding: 15px; display: block; font-family: 'Roboto', sans-serif; text-decoration: none; font-size: 23px;}
+.Martello{display: none;}
+ /*Header*/
+
+
+
+
+@media(max-width: 768px){
+    .cta{display: none;}
+    .menu{position: absolute; top: 0%; right:-100%;  background: black;
+    height: 100vh; padding-top: 80px;}
+    .menu li{display: block;}
+   .menu--open{right:0%;}
+   
+    .Martello{display: block;
+    width: 30px; height: 30px; 
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    }
+    .Martello span{background: whitesmoke;
+    height: 3px; width: 100%; display: block ;
+    margin-bottom: 5px;
+    }
+
+}
+    
+
+
+
+
+/*Header*/
+.hero{
+    
+    height: 100vh;
+    display: flex;width: 100%;  align-items: center;
+    background: url(img/Sede\ Agenzia\ del\ Secolo.png) no-repeat center center;
+    background-size: cover;
+    transition: opacity 0.3s;
+
+}
+
+.hero__content{
+width: 90%;
+max-width: 1350px;
+margin: 0 auto;
+padding: 30px;
+}
+/*Header*/
+
+
+/*Class Poster*/
+.poster{
+    display: flex; 
+    height: 100vh; 
+    width: 100%;
+    align-items: center;
+    margin-top: 70px;
+}
+.poster__img{width: 65%; height: 100%;}
+.poster__content{width: 35%; padding: 50px;}
+.poster__img img{object-fit: cover; width: 100%; height: 100%;}
+/*Class Poster*/
+
+ /*Poster smartphone*/
+@media(max-width:768px){
+    .poster{flex-wrap: wrap; height: auto;}
+    .poster__img,
+    .poster__content{width: 100%;}
+    .background{object-fit: cover;}
+}
+ /* Poster smartphone*/
+
+ /*Cover*/
+ .bg-cover{
+    display: flex;
+    padding: 100px 0;
+    background: linear-gradient(0deg, rgba(0,0,0,.7),rgba(0,0,0, 0.7)),url(img/automazione\ \(2\).png) no-repeat center center;
+    background-size: cover;
+    margin-top: 50px;
+    
+}
+.bg-cover__text{
+    width: 50%; padding: 30px;
+}
+
+.bg-cover__title{
+    width: 50%; padding: 50px; display: flex; align-items: center;
+}
+ /*Cover*/
+
+
+
+
+  /*smartphone bg-Cover*/
+@media(max-width:768px){ 
+.bg-cover{flex-wrap: wrap; height: auto;}
+.bg-cover__text,
+.bg-cover__title{width: 100%;}
+ }
+ /*smartphone Bg-cover*/
+
+
+
+ /*Grid*/
+ .grid{display: flex; max-width: 1350px; padding: 0 30px; margin: 0 auto;  margin-top: 10%;}
+.grid.col{width: 100%;} 
+.co1{  margin-top: 20px;
+font-size: 20px;}
+ /*Gird*/
+
+ /*smartphone Gird*/
+@media(max-width:768px){   
+.grid{flex-wrap: wrap;
+}
+.co1{margin-top: -40px;}
+.testo2{margin-top:120px;}
+}
+ /*smartphone Grid*/
+
+
+  /*Main Carousel*/
+.main-carousel{ padding: 40px 0; background-color: #dedede; }
+.carousel-cell{height: 350px;width: 350px; 
+background: green;
+border-radius: 100%;
+line-height: 350px;
+text-align: center;
+margin-right: 40px;
+margin-top: 60px;
+}
+.circu {border-radius: 100%;
+    width: 100%;
+    height: 100%}
+ /*Main Carousel*/
+
+  
+
+
+@media(max-width:768px){
+    .testo2{margin-top: 5px;}
+}
+
+ /*Footer*/
+footer{
+	text-align:center;
+	padding:30px 10px;
+	line-height: 1.6em;
+	font-size:0.8em;
+	background-color: black;
+	color: #fff;
+    margin-top: 5%;
+}
+
+footer a{
+	color:#F0776C;
+}
+
+footer a:hover{
+	color:black;	
+}
+
+footer .social-cont .social-list > li {
+	margin: 8px 8px 8px 0;
+	display: inline-block;
+	vertical-align: top;
+	height: 32px;
+	width: 32px;
+	border-radius: 6em;
+	background-color:black; 
+}
+
+footer .social-cont .social-list li img {
+	width: 32px
+}
+
+footer .social-cont .social-list > li:hover {
+background:#FF968C; 	
+}
+ /*Footer*/	
+
+
+ /*smartphone Footer*/
+ @media(max-width:768px){
+    footer{
+        text-align:center;
+        padding:30px 10px;
+        line-height: 1.6em;
+        font-size:0.8em;
+        background-color: black;
+        color: #fff;
+        margin-top: 10%;
+    }
+}
+ /*smartphone Footer*/
+
+
+
+
+
+
+ /*box sizing*/
+*,
+*:before,
+*:after{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+ <!--Header --->   
+<div class="header">
+    <div class="logo">
+        <img src="Logo/Logo11.png" alt="Accademia del Secolo | Corsi gratuiti in Italia">
+    </div>
+    <ul class="menu">
+        <li><a href="index.html" rel="noopener noreferrer"target="_blank" >Home</a></li>
+        <li><a href="Default.html" rel="noopener noreferrer" target="_blank">Chi siamo</a></li>
+        <li><a href="Sitoweb.html" rel="noopener noreferrer"target="_blank"> Contatti</a></li>
+    </ul>
+    <div class="cta">
+        <a href="Index3.html"target="_blank" ></a></div>
+        <div class="Martello">
+    <span></span>
+    <span></span>
+    <span></span>
+        </div>
+    </div>
+    <!--Header --->
+    
+    
+    
+    
+    
+    <!--Hero --->
+    
+    <div class="hero">
+        <div class="hero__content">
+            <p class="intro-text testo4">ACCADEMIA Del Secolo</p>
+            <h1 class="big-text testo3">La nostra offerta di Corsi Gratuiti</h1>
+        </div>
+    </div>
+    <!--Hero --->
+    
+    
+    
+    
+    <!--Poster --->
+    
+    <div class="poster">
+    <div class="poster__img">
+        <img src="img/Cnc.png" loading="lazy" alt="Corsi di CNC in Italia">
+    
+    </div>
+    <div class="poster__content">
+        <h2 class="med-text">Corso Cnc</h2>
+        <p class="testo1">Le macchine CNC sono macchine utensili i cui movimenti vengono controllati da un dispositivo elettronico integrato nella macchina detto controllo numerico.<br>I movimenti e le funzioni di queste macchine sono prestabiliti, ovvero vengono pre-impostati a tavolino attraverso dei software specifici.
+            Queste caratteristiche le rendono ottime per svolgere lavorazioni ad alta precisione che richiedono lunghi tempi di lavorazione, ma impediscono alla macchina di interagire con l’ambiente esterno autonomamente in caso di collisioni o imprevisti. Per questo motivo devono essere controllate da un operatore, il quale ha il compito di impostare il programma, preparare i grezzi da lavorare e intervenire in caso di problemi o correzioni nella lavorazione.
+            Come abbiamo già accennato, il panorama delle macchine CNC è enormemente vasto, ci sono tecnologie diverse a seconda della lavorazione o del materiale che si vuole lavorare.
+        </p>
+<a href="https://youtu.be/wjEV28zKcJM" alt="Corsi di Cnc|Gratuti" rel="noopener noreferrer" target="_blank" class="button"> Introduzione Video</a>
+    </div>
+    </div>
+    <!--Poster --->
+    
+    
+    
+    <!--Cover --->
+    
+    <div class="Bg-cover">
+    <div class="Bg-cover__title">
+    <h3 class="med-text tv1">Industria 4.0</h3>
+    </div>
+    <div class="Bg-cover__text">
+        <h4 class="tv med-text">Automazione</h4>
+        <p class="testo ">Il termine automazione identifica la tecnologia che usa sistemi di controllo (come circuiti logici o elaboratori) per gestire macchine e processi, riducendo la necessità dell'intervento umano, ovvero per l'esecuzione di operazioni ripetitive o complesse, ma anche dove si richieda sicurezza o certezza dell'azione o semplicemente per maggiore comodità.
+            A partire dalla prima rivoluzione industriale sono stati richiesti, agli ingegneri e alle industrie, degli enormi investimenti nell'ambito dell'automazione: la macchina a vapore di James Watt prima, il motore a scoppio di Eugenio Barsanti e Felice Matteucci e l'elettronica dopo, hanno permesso il raggiungimento di notevoli progressi tecnologici.
+            L'origine del termine "automazione" risale al 1952 ed è contesa tra John Diebold e Del Harder. Il primo scrisse nel 1952 il primo dei suoi dodici libri, dal titolo Automation: the Advent of the Automatic Factory, basato su uno studio che l'autore aveva condotto quando frequentava l'Università di Harvard: nel libro, Diebold presentava la sua visione dell'uso di sistemi elettronici programmabili in campo economico. Harder, vicepresidente del settore produzione della Ford, avrebbe invece utilizzato il termine "automazione" per riferirsi a una nuova concezione di movimentazione automatica nell'industria automobilistica.
+            Il termine, che inizialmente fu utilizzato in maniera non molto dissimile rispetto al termine "meccanizzazione", ebbe un rapido successo negli anni successivi: tale successo fu favorito in particolare dagli sviluppi dell'ingegneria meccanica, dell'ingegneria elettrica e dell'ingegneria del controllo dei processi lavorativi, dai contributi forniti dalla modellistica matematica e dall'avvento dei computer e delle nuove tecnologie.
+        </p>
+    </div>
+    </div>
+    <!--Cover --->
+    
+    
+    
+    <!--Grid --->
+    <div class="grid">
+        <div class="co"> 
+       <h5 class="med-text">Scegli il corso gratuito che fa per te</h5>
+       <p></p>
+        
+    
+    </div>
+    <div class="co"> 
+        <p class="co1 ">
+        La nostra selezione di corsi gratuiti: Migliora la tua formazione e sviluppa nuove competenze.<br>
+        <br>
+        Una volta terminato  il percorso il lavoro è assicurato, ti garantiamo uno stage retribuito.
+        
+        </p>
+         
+     
+     </div>
+    </div>
+    <!--Grid --->
+    
+    
+    <!--Celle --->
+    
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell"><img  class="circu" src="img/Programmatore.png" loading="lazy" alt="Corsi di formazione gratuiti"></div>
+        <div class="carousel-cell"><img  class="circu" src="img/Meccanico.png" loading="lazy" alt="Corsi di CNC in Italia"></div>
+        <div class="carousel-cell"><img  class="circu" src="img/elletricista.png" loading="lazy" alt="Formazione gratuita in tutta Italia"></div>
+        <div class="carousel-cell"><img  class="circu" src="img/Saldatore.png" loading="lazy" alt="Accademia del Secolo: ls formazione per te"></div>
+        <div class="carousel-cell"><img  class="circu" src="img/magazziniere.png" loading="lazy" alt="Accademia del Secolo: tutti i corsi gratuiti"></div>
+        <div class="carousel-cell"><img  class="circu" src="img/disegn-mecc.png" loading="lazy" alt="Accademia del Secolo: scegli il corso che fa per te"></div>
+        <div class="carousel-cell"><img  class="circu" src="img/creazione-gaming.png" loading="lazy" alt="Scegli la tua formazione gratuita con Accademia del Secolo"></div>
+        <div class="carousel-cell"><img  class="circu" src="img/tenico.png" loading="lazy" alt="Formazione e corsi gratuiti: scegli Accademia del Secolo"></div>
+    
+    </div>
+    <!--Celle --->
+    
+    
+    
+    
+    <!--footer --->
+    
+    <footer>
+        Visual Accademy Del Secolo| Via Atlantide, 24 - 0331, Milano ITALIA | C.F. ABCSMDKSKDMSMSMD | P.Iva 000000000 <br>
+        <a class="trans-color-text" href="#">info@Agenzi.it</a> | <span itemprop="telephone"><a href="#">+39 02 45 65 76 695 59</a></span>
+          
+    
+        <div class="social-cont">        
+        <ul class="social-list">
+    
+         <li><a target="_blank" href="https://it-it.facebook.com/"><img src="Logo/Face.png" loading="lazy"  title="facebook" alt="Facebook icon|Corsi Gratuti Italia"></a></li>
+        <li><a target="_blank" href="https://twitter.com/"><img src="Logo/Twi.png" title="Tw" loading="lazy" alt="twitter icon|Corsi Gratuti "></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/"><img src="Logo/Istagram.png"loading="lazy" title="Instagram" alt="Instagram icon|Corsi Di formazione Gratuti"></a></li>
+    
+    
+        </ul>
+        <div class="floatstop"></div>
+        </div>
+    
+     
+        </div>
+        
+    </footer>
+    <!--Footer --->
+    
+    
+    
+    <!--jquery --->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    
+    
+    <script>
+        /*open pannel*/
+    $(document).ready(function(){
+    $(".Martello").on('click', function(){
+        $(".menu").toggleClass("menu--open");
+        });
+    });
+    </script>
+
+
+</body>
+</html>
